@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThrottleImplementations", "ThrottleImplementations\ThrottleImplementations.csproj", "{270722A4-174E-40AB-A660-54935B7E1C97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMVC_Net471", "AspNetMVC_Net471\AspNetMVC_Net471.csproj", "{04A4A859-CA6A-43BC-AE0F-87A17DE043A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{270722A4-174E-40AB-A660-54935B7E1C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{270722A4-174E-40AB-A660-54935B7E1C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{270722A4-174E-40AB-A660-54935B7E1C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{270722A4-174E-40AB-A660-54935B7E1C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A4A859-CA6A-43BC-AE0F-87A17DE043A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A4A859-CA6A-43BC-AE0F-87A17DE043A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A4A859-CA6A-43BC-AE0F-87A17DE043A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A4A859-CA6A-43BC-AE0F-87A17DE043A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58D93502-0427-40D6-B224-FB7BDE18D2BD}
+	EndGlobalSection
+EndGlobal
