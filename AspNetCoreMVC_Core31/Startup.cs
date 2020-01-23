@@ -28,21 +28,28 @@ namespace AspNetCoreMVC_Core31
             services.AddControllersWithViews();
             services.AddSingleton<Calculator>(new Calculator());
             services.AddApplicationInsightsTelemetry();
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-{
-    if (env.IsDevelopment())
-    {
-        app.UseDeveloperExceptionPage();
-    }
-    else
-    {
-        app.UseExceptionHandler("/Home/Error");
-        app.UseHsts();
-    }
-    app.UseMiddleware<ErrorLoggingMiddleware>();
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
+            }
+            app.UseCors("MyPolicy");
+            app.UseMiddleware<ErrorLoggingMiddleware>();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

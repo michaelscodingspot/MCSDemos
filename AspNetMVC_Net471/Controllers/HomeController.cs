@@ -24,5 +24,26 @@ namespace AspNetMVC_Net471.Controllers
             ViewBag.Message = "Your contact page.";
             return View();
         }
+        public ActionResult Invalid()
+        {
+            return Foo();
+        }
+
+        private ActionResult Foo()
+        {
+            int x = 5;
+            int y = 6;
+            int z = x + y;
+
+            return Bar();
+        }
+
+        private ActionResult Bar()
+        {
+            int aa = 11;
+            int bb = 15;
+            int cc = aa * bb;
+            throw new InvalidOperationException();
+        }
     }
 }
