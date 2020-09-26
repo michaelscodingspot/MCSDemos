@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCoreWebApi_Core31.Telemetry;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 

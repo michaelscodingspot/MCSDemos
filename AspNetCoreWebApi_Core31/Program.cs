@@ -11,24 +11,24 @@ namespace AspNetCoreWebApi_Core31
         public static void Main(string[] args)
         {
             //CreateHostBuilder(args).Build().Run();
-            var source = new EventSource(new Configuration(new Uri("https://smee.io/3fUXIBJELWjqgj8Q")));
-            source.MessageReceived += (sender, eventArgs) =>
-            {
-                Debugger.Break();
-            };
+            //var source = new EventSource(new Configuration(new Uri("https://smee.io/3fUXIBJELWjqgj8Q")));
+            //source.MessageReceived += (sender, eventArgs) =>
+            //{
+            //    Debugger.Break();
+            //};
 
-            source.CommentReceived += (sender, eventArgs) =>
-            {
-                Debugger.Break();
-            };
+            //source.CommentReceived += (sender, eventArgs) =>
+            //{
+            //    Debugger.Break();
+            //};
 
-            source.StartAsync();
+            //source.StartAsync();
 
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>())
                 .Build()
                 .Run();
-            source.Close();
+            //source.Close();
             Console.ReadLine();
         }
 
